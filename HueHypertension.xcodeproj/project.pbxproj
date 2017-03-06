@@ -14,6 +14,11 @@
 		FFBABFD51E67F2B200E68260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBABFD31E67F2B200E68260 /* LaunchScreen.storyboard */; };
 		FFBABFE01E67F2B200E68260 /* HueHypertensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBABFDF1E67F2B200E68260 /* HueHypertensionTests.m */; };
 		FFBABFEB1E67F2B200E68260 /* HueHypertensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBABFEA1E67F2B200E68260 /* HueHypertensionUITests.m */; };
+		FFBABFFA1E69665B00E68260 /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBABFF91E69665B00E68260 /* HueSDK_iOS.framework */; };
+		FFBABFFC1E6966F000E68260 /* Lumberjack in Resources */ = {isa = PBXBuildFile; fileRef = FFBABFFB1E6966EF00E68260 /* Lumberjack */; };
+		FFBABFFE1E6967BD00E68260 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBABFFD1E6967BD00E68260 /* libc++.tbd */; };
+		FFBAC0001E6967D200E68260 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBABFFF1E6967D200E68260 /* libsqlite3.0.tbd */; };
+		FFBAC0021E6967DA00E68260 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBAC0011E6967DA00E68260 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD7AB71331A7A98545A260E7 /* Pods-HueHypertension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HueHypertension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HueHypertension/Pods-HueHypertension.debug.xcconfig"; sourceTree = "<group>"; };
+		AFA9829F7059FACC8AA8E418 /* Pods-HueHypertension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HueHypertension.release.xcconfig"; path = "Pods/Target Support Files/Pods-HueHypertension/Pods-HueHypertension.release.xcconfig"; sourceTree = "<group>"; };
 		FFBABFC21E67F2B200E68260 /* HueHypertension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueHypertension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBABFC61E67F2B200E68260 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFBABFC81E67F2B200E68260 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +55,11 @@
 		FFBABFE61E67F2B200E68260 /* HueHypertensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HueHypertensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBABFEA1E67F2B200E68260 /* HueHypertensionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HueHypertensionUITests.m; sourceTree = "<group>"; };
 		FFBABFEC1E67F2B200E68260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBABFF91E69665B00E68260 /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_iOS.framework; sourceTree = "<group>"; };
+		FFBABFFB1E6966EF00E68260 /* Lumberjack */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lumberjack; sourceTree = "<group>"; };
+		FFBABFFD1E6967BD00E68260 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FFBABFFF1E6967D200E68260 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		FFBAC0011E6967DA00E68260 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBAC0021E6967DA00E68260 /* libz.tbd in Frameworks */,
+				FFBAC0001E6967D200E68260 /* libsqlite3.0.tbd in Frameworks */,
+				FFBABFFE1E6967BD00E68260 /* libc++.tbd in Frameworks */,
+				FFBABFFA1E69665B00E68260 /* HueSDK_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +91,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0BC5A4E9F7FC196F3BB12E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAC0011E6967DA00E68260 /* libz.tbd */,
+				FFBABFFF1E6967D200E68260 /* libsqlite3.0.tbd */,
+				FFBABFFD1E6967BD00E68260 /* libc++.tbd */,
+				FFBABFF91E69665B00E68260 /* HueSDK_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1FE9B3D4E632943C7635310 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD7AB71331A7A98545A260E7 /* Pods-HueHypertension.debug.xcconfig */,
+				AFA9829F7059FACC8AA8E418 /* Pods-HueHypertension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FFBABFB91E67F2B200E68260 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +118,8 @@
 				FFBABFDE1E67F2B200E68260 /* HueHypertensionTests */,
 				FFBABFE91E67F2B200E68260 /* HueHypertensionUITests */,
 				FFBABFC31E67F2B200E68260 /* Products */,
+				F1FE9B3D4E632943C7635310 /* Pods */,
+				A0BC5A4E9F7FC196F3BB12E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +136,7 @@
 		FFBABFC41E67F2B200E68260 /* HueHypertension */ = {
 			isa = PBXGroup;
 			children = (
-				FFBABFC81E67F2B200E68260 /* AppDelegate.h */,
-				FFBABFC91E67F2B200E68260 /* AppDelegate.m */,
+				FFBABFF81E69654700E68260 /* AppDelegate */,
 				FFBABFCE1E67F2B200E68260 /* Main.storyboard */,
 				FFBABFD31E67F2B200E68260 /* LaunchScreen.storyboard */,
 				FFBABFC51E67F2B200E68260 /* Supporting Files */,
@@ -110,6 +147,7 @@
 		FFBABFC51E67F2B200E68260 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FFBABFFB1E6966EF00E68260 /* Lumberjack */,
 				FFBABFD11E67F2B200E68260 /* Assets.xcassets */,
 				FFBABFD61E67F2B200E68260 /* Info.plist */,
 				FFBABFC61E67F2B200E68260 /* main.m */,
@@ -135,6 +173,15 @@
 			path = HueHypertensionUITests;
 			sourceTree = "<group>";
 		};
+		FFBABFF81E69654700E68260 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FFBABFC81E67F2B200E68260 /* AppDelegate.h */,
+				FFBABFC91E67F2B200E68260 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFBABFEF1E67F2B200E68260 /* Build configuration list for PBXNativeTarget "HueHypertension" */;
 			buildPhases = (
+				67C72D3A177D714084A233E3 /* [CP] Check Pods Manifest.lock */,
 				FFBABFBE1E67F2B200E68260 /* Sources */,
 				FFBABFBF1E67F2B200E68260 /* Frameworks */,
 				FFBABFC01E67F2B200E68260 /* Resources */,
+				C881752843D76AE4663AD48F /* [CP] Embed Pods Frameworks */,
+				8586609B6CA6E1B18748691B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,6 +296,7 @@
 			files = (
 				FFBABFD51E67F2B200E68260 /* LaunchScreen.storyboard in Resources */,
 				FFBABFD21E67F2B200E68260 /* Assets.xcassets in Resources */,
+				FFBABFFC1E6966F000E68260 /* Lumberjack in Resources */,
 				FFBABFD01E67F2B200E68260 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +316,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67C72D3A177D714084A233E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8586609B6CA6E1B18748691B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HueHypertension/Pods-HueHypertension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C881752843D76AE4663AD48F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HueHypertension/Pods-HueHypertension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFBABFBE1E67F2B200E68260 /* Sources */ = {
@@ -417,11 +516,35 @@
 		};
 		FFBABFF01E67F2B200E68260 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD7AB71331A7A98545A260E7 /* Pods-HueHypertension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HU5VQMU784;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HueHypertension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"HMSegmentedControl\"",
+					"-framework",
+					"\"JTCalendar\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MONActivityIndicatorView\"",
+					"-framework",
+					"\"SDCycleScrollView\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"UIView_AutoLayout\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = lyy.HueHypertension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -429,11 +552,35 @@
 		};
 		FFBABFF11E67F2B200E68260 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA9829F7059FACC8AA8E418 /* Pods-HueHypertension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HU5VQMU784;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HueHypertension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"HMSegmentedControl\"",
+					"-framework",
+					"\"JTCalendar\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MONActivityIndicatorView\"",
+					"-framework",
+					"\"SDCycleScrollView\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"UIView_AutoLayout\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = lyy.HueHypertension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -508,6 +655,7 @@
 				FFBABFF11E67F2B200E68260 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFBABFF21E67F2B200E68260 /* Build configuration list for PBXNativeTarget "HueHypertensionTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +664,7 @@
 				FFBABFF41E67F2B200E68260 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFBABFF51E67F2B200E68260 /* Build configuration list for PBXNativeTarget "HueHypertensionUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +673,7 @@
 				FFBABFF71E67F2B200E68260 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
