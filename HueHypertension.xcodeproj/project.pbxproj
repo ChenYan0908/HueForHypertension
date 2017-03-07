@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46472C9B667EBA57AD194D15 /* Pods_HueHypertension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C043E0920653887C70424ACD /* Pods_HueHypertension.framework */; };
 		FFBABFC71E67F2B200E68260 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBABFC61E67F2B200E68260 /* main.m */; };
 		FFBABFCA1E67F2B200E68260 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBABFC91E67F2B200E68260 /* AppDelegate.m */; };
 		FFBABFD01E67F2B200E68260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBABFCE1E67F2B200E68260 /* Main.storyboard */; };
@@ -15,10 +16,27 @@
 		FFBABFE01E67F2B200E68260 /* HueHypertensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBABFDF1E67F2B200E68260 /* HueHypertensionTests.m */; };
 		FFBABFEB1E67F2B200E68260 /* HueHypertensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBABFEA1E67F2B200E68260 /* HueHypertensionUITests.m */; };
 		FFBABFFA1E69665B00E68260 /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBABFF91E69665B00E68260 /* HueSDK_iOS.framework */; };
-		FFBABFFC1E6966F000E68260 /* Lumberjack in Resources */ = {isa = PBXBuildFile; fileRef = FFBABFFB1E6966EF00E68260 /* Lumberjack */; };
 		FFBABFFE1E6967BD00E68260 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBABFFD1E6967BD00E68260 /* libc++.tbd */; };
 		FFBAC0001E6967D200E68260 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBABFFF1E6967D200E68260 /* libsqlite3.0.tbd */; };
 		FFBAC0021E6967DA00E68260 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBAC0011E6967DA00E68260 /* libz.tbd */; };
+		FFBAC0071E6E767600E68260 /* HueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC0061E6E767600E68260 /* HueManager.m */; };
+		FFBAC00E1E6E76BA00E68260 /* PHBridgePushLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC00C1E6E76BA00E68260 /* PHBridgePushLinkViewController.m */; };
+		FFBAC00F1E6E76BA00E68260 /* PHBridgePushLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBAC00D1E6E76BA00E68260 /* PHBridgePushLinkViewController.xib */; };
+		FFBAC0131E6E76D200E68260 /* PHBridgeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC0111E6E76D200E68260 /* PHBridgeSelectionViewController.m */; };
+		FFBAC0141E6E76D200E68260 /* PHBridgeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBAC0121E6E76D200E68260 /* PHBridgeSelectionViewController.xib */; };
+		FFBAC0181E6E76E100E68260 /* PHLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC0161E6E76E100E68260 /* PHLoadingViewController.m */; };
+		FFBAC0191E6E76E100E68260 /* PHLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBAC0171E6E76E100E68260 /* PHLoadingViewController.xib */; };
+		FFBAC01E1E6E8F5F00E68260 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC01C1E6E8F5F00E68260 /* LoginViewController.m */; };
+		FFBAC01F1E6E8F5F00E68260 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBAC01D1E6E8F5F00E68260 /* LoginViewController.xib */; };
+		FFBAC0211E6E989A00E68260 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBAC0201E6E989A00E68260 /* QuartzCore.framework */; };
+		FFBAC03C1E6E9A5A00E68260 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC0331E6E9A5A00E68260 /* DDAbstractDatabaseLogger.m */; };
+		FFBAC03D1E6E9A5A00E68260 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC0351E6E9A5A00E68260 /* DDASLLogger.m */; };
+		FFBAC03E1E6E9A5A00E68260 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC0371E6E9A5A00E68260 /* DDFileLogger.m */; };
+		FFBAC03F1E6E9A5A00E68260 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC0391E6E9A5A00E68260 /* DDLog.m */; };
+		FFBAC0401E6E9A5A00E68260 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC03B1E6E9A5A00E68260 /* DDTTYLogger.m */; };
+		FFBAC0441E6EA13400E68260 /* NSObject+Tips.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC0431E6EA13400E68260 /* NSObject+Tips.m */; };
+		FFBAC0471E6EA22B00E68260 /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC0461E6EA22B00E68260 /* UIResponder+FirstResponder.m */; };
+		FFBAC04A1E6EA2A600E68260 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBAC0491E6EA2A600E68260 /* AlertManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +59,7 @@
 /* Begin PBXFileReference section */
 		AD7AB71331A7A98545A260E7 /* Pods-HueHypertension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HueHypertension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HueHypertension/Pods-HueHypertension.debug.xcconfig"; sourceTree = "<group>"; };
 		AFA9829F7059FACC8AA8E418 /* Pods-HueHypertension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HueHypertension.release.xcconfig"; path = "Pods/Target Support Files/Pods-HueHypertension/Pods-HueHypertension.release.xcconfig"; sourceTree = "<group>"; };
+		C043E0920653887C70424ACD /* Pods_HueHypertension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HueHypertension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBABFC21E67F2B200E68260 /* HueHypertension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueHypertension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBABFC61E67F2B200E68260 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFBABFC81E67F2B200E68260 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,10 +75,41 @@
 		FFBABFEA1E67F2B200E68260 /* HueHypertensionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HueHypertensionUITests.m; sourceTree = "<group>"; };
 		FFBABFEC1E67F2B200E68260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFBABFF91E69665B00E68260 /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_iOS.framework; sourceTree = "<group>"; };
-		FFBABFFB1E6966EF00E68260 /* Lumberjack */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lumberjack; sourceTree = "<group>"; };
 		FFBABFFD1E6967BD00E68260 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		FFBABFFF1E6967D200E68260 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FFBAC0011E6967DA00E68260 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FFBAC0031E6D952500E68260 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		FFBAC0051E6E767600E68260 /* HueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HueManager.h; path = ../../../../Downloads/hue/ios_hypertension_app/hypertension/HueManager.h; sourceTree = "<group>"; };
+		FFBAC0061E6E767600E68260 /* HueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HueManager.m; path = ../../../../Downloads/hue/ios_hypertension_app/hypertension/HueManager.m; sourceTree = "<group>"; };
+		FFBAC00B1E6E76BA00E68260 /* PHBridgePushLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHBridgePushLinkViewController.h; path = ../../../../Downloads/hue/ios_hypertension_app/hypertension/PHBridgePushLinkViewController.h; sourceTree = "<group>"; };
+		FFBAC00C1E6E76BA00E68260 /* PHBridgePushLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHBridgePushLinkViewController.m; path = ../../../../Downloads/hue/ios_hypertension_app/hypertension/PHBridgePushLinkViewController.m; sourceTree = "<group>"; };
+		FFBAC00D1E6E76BA00E68260 /* PHBridgePushLinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHBridgePushLinkViewController.xib; path = ../../../../Downloads/hue/ios_hypertension_app/hypertension/PHBridgePushLinkViewController.xib; sourceTree = "<group>"; };
+		FFBAC0101E6E76D200E68260 /* PHBridgeSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHBridgeSelectionViewController.h; path = ../../../../Downloads/hue/ios_hypertension_app/hypertension/PHBridgeSelectionViewController.h; sourceTree = "<group>"; };
+		FFBAC0111E6E76D200E68260 /* PHBridgeSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHBridgeSelectionViewController.m; path = ../../../../Downloads/hue/ios_hypertension_app/hypertension/PHBridgeSelectionViewController.m; sourceTree = "<group>"; };
+		FFBAC0121E6E76D200E68260 /* PHBridgeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHBridgeSelectionViewController.xib; path = ../../../../Downloads/hue/ios_hypertension_app/hypertension/PHBridgeSelectionViewController.xib; sourceTree = "<group>"; };
+		FFBAC0151E6E76E100E68260 /* PHLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHLoadingViewController.h; path = ../../../../Downloads/hue/ios_hypertension_app/hypertension/LoadingView/PHLoadingViewController.h; sourceTree = "<group>"; };
+		FFBAC0161E6E76E100E68260 /* PHLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHLoadingViewController.m; path = ../../../../Downloads/hue/ios_hypertension_app/hypertension/LoadingView/PHLoadingViewController.m; sourceTree = "<group>"; };
+		FFBAC0171E6E76E100E68260 /* PHLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHLoadingViewController.xib; path = ../../../../Downloads/hue/ios_hypertension_app/hypertension/LoadingView/PHLoadingViewController.xib; sourceTree = "<group>"; };
+		FFBAC01B1E6E8F5F00E68260 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FFBAC01C1E6E8F5F00E68260 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FFBAC01D1E6E8F5F00E68260 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		FFBAC0201E6E989A00E68260 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FFBAC0321E6E9A5A00E68260 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		FFBAC0331E6E9A5A00E68260 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		FFBAC0341E6E9A5A00E68260 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		FFBAC0351E6E9A5A00E68260 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		FFBAC0361E6E9A5A00E68260 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		FFBAC0371E6E9A5A00E68260 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		FFBAC0381E6E9A5A00E68260 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		FFBAC0391E6E9A5A00E68260 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		FFBAC03A1E6E9A5A00E68260 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		FFBAC03B1E6E9A5A00E68260 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		FFBAC0421E6EA13400E68260 /* NSObject+Tips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Tips.h"; sourceTree = "<group>"; };
+		FFBAC0431E6EA13400E68260 /* NSObject+Tips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Tips.m"; sourceTree = "<group>"; };
+		FFBAC0451E6EA22B00E68260 /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
+		FFBAC0461E6EA22B00E68260 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
+		FFBAC0481E6EA2A600E68260 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
+		FFBAC0491E6EA2A600E68260 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +117,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBAC0211E6E989A00E68260 /* QuartzCore.framework in Frameworks */,
 				FFBAC0021E6967DA00E68260 /* libz.tbd in Frameworks */,
 				FFBAC0001E6967D200E68260 /* libsqlite3.0.tbd in Frameworks */,
 				FFBABFFE1E6967BD00E68260 /* libc++.tbd in Frameworks */,
 				FFBABFFA1E69665B00E68260 /* HueSDK_iOS.framework in Frameworks */,
+				46472C9B667EBA57AD194D15 /* Pods_HueHypertension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +146,12 @@
 		A0BC5A4E9F7FC196F3BB12E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FFBAC0201E6E989A00E68260 /* QuartzCore.framework */,
 				FFBAC0011E6967DA00E68260 /* libz.tbd */,
 				FFBABFFF1E6967D200E68260 /* libsqlite3.0.tbd */,
 				FFBABFFD1E6967BD00E68260 /* libc++.tbd */,
 				FFBABFF91E69665B00E68260 /* HueSDK_iOS.framework */,
+				C043E0920653887C70424ACD /* Pods_HueHypertension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,6 +190,10 @@
 		FFBABFC41E67F2B200E68260 /* HueHypertension */ = {
 			isa = PBXGroup;
 			children = (
+				FFBAC04B1E6EA2AA00E68260 /* Utils */,
+				FFBAC0411E6EA11E00E68260 /* Category */,
+				FFBAC01A1E6E8EC900E68260 /* Hypertension */,
+				FFBAC0041E6E766400E68260 /* Hue */,
 				FFBABFF81E69654700E68260 /* AppDelegate */,
 				FFBABFCE1E67F2B200E68260 /* Main.storyboard */,
 				FFBABFD31E67F2B200E68260 /* LaunchScreen.storyboard */,
@@ -147,10 +205,11 @@
 		FFBABFC51E67F2B200E68260 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FFBABFFB1E6966EF00E68260 /* Lumberjack */,
+				FFBAC0221E6E9A0700E68260 /* Lumberjack */,
 				FFBABFD11E67F2B200E68260 /* Assets.xcassets */,
 				FFBABFD61E67F2B200E68260 /* Info.plist */,
 				FFBABFC61E67F2B200E68260 /* main.m */,
+				FFBAC0031E6D952500E68260 /* Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,6 +239,95 @@
 				FFBABFC91E67F2B200E68260 /* AppDelegate.m */,
 			);
 			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FFBAC0041E6E766400E68260 /* Hue */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAC00A1E6E76A300E68260 /* LoadingView */,
+				FFBAC0091E6E769400E68260 /* SelectView */,
+				FFBAC0081E6E768900E68260 /* PushView */,
+				FFBAC0051E6E767600E68260 /* HueManager.h */,
+				FFBAC0061E6E767600E68260 /* HueManager.m */,
+			);
+			name = Hue;
+			sourceTree = "<group>";
+		};
+		FFBAC0081E6E768900E68260 /* PushView */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAC00B1E6E76BA00E68260 /* PHBridgePushLinkViewController.h */,
+				FFBAC00C1E6E76BA00E68260 /* PHBridgePushLinkViewController.m */,
+				FFBAC00D1E6E76BA00E68260 /* PHBridgePushLinkViewController.xib */,
+			);
+			name = PushView;
+			sourceTree = "<group>";
+		};
+		FFBAC0091E6E769400E68260 /* SelectView */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAC0101E6E76D200E68260 /* PHBridgeSelectionViewController.h */,
+				FFBAC0111E6E76D200E68260 /* PHBridgeSelectionViewController.m */,
+				FFBAC0121E6E76D200E68260 /* PHBridgeSelectionViewController.xib */,
+			);
+			name = SelectView;
+			sourceTree = "<group>";
+		};
+		FFBAC00A1E6E76A300E68260 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAC0151E6E76E100E68260 /* PHLoadingViewController.h */,
+				FFBAC0161E6E76E100E68260 /* PHLoadingViewController.m */,
+				FFBAC0171E6E76E100E68260 /* PHLoadingViewController.xib */,
+			);
+			name = LoadingView;
+			sourceTree = "<group>";
+		};
+		FFBAC01A1E6E8EC900E68260 /* Hypertension */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAC01B1E6E8F5F00E68260 /* LoginViewController.h */,
+				FFBAC01C1E6E8F5F00E68260 /* LoginViewController.m */,
+				FFBAC01D1E6E8F5F00E68260 /* LoginViewController.xib */,
+			);
+			name = Hypertension;
+			sourceTree = "<group>";
+		};
+		FFBAC0221E6E9A0700E68260 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAC0321E6E9A5A00E68260 /* DDAbstractDatabaseLogger.h */,
+				FFBAC0331E6E9A5A00E68260 /* DDAbstractDatabaseLogger.m */,
+				FFBAC0341E6E9A5A00E68260 /* DDASLLogger.h */,
+				FFBAC0351E6E9A5A00E68260 /* DDASLLogger.m */,
+				FFBAC0361E6E9A5A00E68260 /* DDFileLogger.h */,
+				FFBAC0371E6E9A5A00E68260 /* DDFileLogger.m */,
+				FFBAC0381E6E9A5A00E68260 /* DDLog.h */,
+				FFBAC0391E6E9A5A00E68260 /* DDLog.m */,
+				FFBAC03A1E6E9A5A00E68260 /* DDTTYLogger.h */,
+				FFBAC03B1E6E9A5A00E68260 /* DDTTYLogger.m */,
+			);
+			name = Lumberjack;
+			sourceTree = "<group>";
+		};
+		FFBAC0411E6EA11E00E68260 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAC0421E6EA13400E68260 /* NSObject+Tips.h */,
+				FFBAC0431E6EA13400E68260 /* NSObject+Tips.m */,
+				FFBAC0451E6EA22B00E68260 /* UIResponder+FirstResponder.h */,
+				FFBAC0461E6EA22B00E68260 /* UIResponder+FirstResponder.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		FFBAC04B1E6EA2AA00E68260 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FFBAC0481E6EA2A600E68260 /* AlertManager.h */,
+				FFBAC0491E6EA2A600E68260 /* AlertManager.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,9 +442,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBAC01F1E6E8F5F00E68260 /* LoginViewController.xib in Resources */,
+				FFBAC0191E6E76E100E68260 /* PHLoadingViewController.xib in Resources */,
+				FFBAC0141E6E76D200E68260 /* PHBridgeSelectionViewController.xib in Resources */,
 				FFBABFD51E67F2B200E68260 /* LaunchScreen.storyboard in Resources */,
+				FFBAC00F1E6E76BA00E68260 /* PHBridgePushLinkViewController.xib in Resources */,
 				FFBABFD21E67F2B200E68260 /* Assets.xcassets in Resources */,
-				FFBABFFC1E6966F000E68260 /* Lumberjack in Resources */,
 				FFBABFD01E67F2B200E68260 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,8 +521,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBAC0131E6E76D200E68260 /* PHBridgeSelectionViewController.m in Sources */,
+				FFBAC0071E6E767600E68260 /* HueManager.m in Sources */,
 				FFBABFCA1E67F2B200E68260 /* AppDelegate.m in Sources */,
+				FFBAC0181E6E76E100E68260 /* PHLoadingViewController.m in Sources */,
+				FFBAC0401E6E9A5A00E68260 /* DDTTYLogger.m in Sources */,
+				FFBAC03E1E6E9A5A00E68260 /* DDFileLogger.m in Sources */,
+				FFBAC01E1E6E8F5F00E68260 /* LoginViewController.m in Sources */,
+				FFBAC00E1E6E76BA00E68260 /* PHBridgePushLinkViewController.m in Sources */,
+				FFBAC03C1E6E9A5A00E68260 /* DDAbstractDatabaseLogger.m in Sources */,
+				FFBAC03F1E6E9A5A00E68260 /* DDLog.m in Sources */,
+				FFBAC0471E6EA22B00E68260 /* UIResponder+FirstResponder.m in Sources */,
 				FFBABFC71E67F2B200E68260 /* main.m in Sources */,
+				FFBAC04A1E6EA2A600E68260 /* AlertManager.m in Sources */,
+				FFBAC0441E6EA13400E68260 /* NSObject+Tips.m in Sources */,
+				FFBAC03D1E6E9A5A00E68260 /* DDASLLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +691,7 @@
 				INFOPLIST_FILE = HueHypertension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
-					"$(inherited)",
+					"-ObjC",
 					"-framework",
 					"\"AFNetworking\"",
 					"-framework",
@@ -563,7 +727,7 @@
 				INFOPLIST_FILE = HueHypertension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
-					"$(inherited)",
+					"-ObjC",
 					"-framework",
 					"\"AFNetworking\"",
 					"-framework",

@@ -13,5 +13,6 @@ target 'HueHypertension' do
   pod 'SDCycleScrollView', '~>1.63'
   pod 'MBProgressHUD', '~> 0.9.2'
   pod 'HMSegmentedControl'
+  pod 'AVOSCloud'
 
 end
