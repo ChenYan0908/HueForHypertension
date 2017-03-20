@@ -153,6 +153,7 @@
 
 /**
  Starts the local heartbeat with a 10 second interval
+ start searching for bridges
  */
 - (void)enableLocalHeartbeat {
     /***************************************************
@@ -169,7 +170,7 @@
         [self.phHueSDK enableLocalConnection];
     } else {
         // Automaticly start searching for bridges
-        [self searchForBridgeLocal];
+//        [self searchForBridgeLocal];
     }
 }
 
