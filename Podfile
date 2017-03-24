@@ -10,7 +10,7 @@ target 'HueHypertension' do
   pod 'JTCalendar', '~> 2.0'
   pod 'UIView+AutoLayout'
   pod 'SDWebImage', '~>3.8'
-  pod 'SDCycleScrollView', '~>1.63'
+  pod 'SDCycleScrollView', '~>1.64'
   pod 'MBProgressHUD', '~> 0.9.2'
   pod 'HMSegmentedControl'
   pod 'AVOSCloud'

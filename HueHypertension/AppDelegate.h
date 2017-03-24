@@ -12,8 +12,10 @@
 #import <HueSDK_iOS/HueSDK.h>
 #import "PHBridgePushLinkViewController.h"
 #import "PHBridgeSelectionViewController.h"
+#import "LoginViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, PHBridgeSelectionViewControllerDelegate, PHBridgePushLinkViewControllerDelegate>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, PHBridgeSelectionViewControllerDelegate, PHBridgePushLinkViewControllerDelegate, LoginDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
@@ -35,6 +37,8 @@
  Starts a search for a bridge
  */
 - (void)searchForBridgeLocal;
+
+- (void)logout;
 
 @end
 

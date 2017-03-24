@@ -8,16 +8,20 @@
 
 #import "AppDelegate.h"
 #import "PHLoadingViewController.h"
-#import "LoginViewController.h"
 #import "NSObject+Tips.h"
 #import "AlertManager.h"
+#import "HomeViewController.h"
+#import "TabBarController.h"
+
+static NSString * const LogoutNotification = @"LogoutNotification";
 
 @interface AppDelegate ()
-
 @property (nonatomic, strong) PHLoadingViewController *loadingView;
 @property (nonatomic, strong) PHBridgeSearching *bridgeSearch;
 @property (nonatomic, strong) PHBridgePushLinkViewController *pushLinkViewController;
 @property (nonatomic, strong) PHBridgeSelectionViewController *bridgeSelectionViewController;
+@property (strong, nonatomic) UITabBarController *tabbarController;
+
 
 @end
 
@@ -35,9 +39,28 @@
     [self.phHueSDK startUpSDK];
     [self.phHueSDK enableLogging:YES];
     
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]]];
+    if (true) {
+        LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];
+        loginVC.delegate = self;
+        self.navigationController = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    }else{
+        self.tabbarController = [UITabBarController new];
+        
+        HomeViewController *hvc = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:[NSBundle mainBundle]];
+        hvc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"状态" image:[UIImage imageNamed:@"save.png"] selectedImage:[UIImage imageNamed:@"save_pressed.png"]];
+        UIViewController *controller1 = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];
+        UIViewController *controller2 = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];
+        UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@"save.png"] selectedImage:[UIImage imageNamed:@"save_pressed.png"]];
+        controller2.tabBarItem = item;
+        
+        self.tabbarController.viewControllers = [NSArray arrayWithObjects:hvc, controller1, controller2, nil];
+        self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.tabbarController];
+    }
+    
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logout) name:LogoutNotification object:nil];
     
     PHNotificationManager *notificationManager = [PHNotificationManager defaultManager];
     
@@ -330,6 +353,36 @@
         // Bridge button not pressed in time
         
     }
+}
+
+
+#pragma mark LoginDelegate
+- (void)loginDidSuccess {
+    self.tabbarController = [UITabBarController new];
+    
+    HomeViewController *hvc = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:[NSBundle mainBundle]];
+    hvc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"状态" image:[UIImage imageNamed:@"home"] selectedImage:[UIImage imageNamed:@"home_select.png"]];
+    UIViewController *controller1 = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];
+    UIViewController *controller2 = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];
+    UITabBarItem *item1 = [[UITabBarItem alloc] initWithTitle:@"HUE" image:[UIImage imageNamed:@"bulb.png"] selectedImage:[UIImage imageNamed:@"bulb_select.png"]];
+    controller1.tabBarItem = item1;
+    UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@"user.png"] selectedImage:[UIImage imageNamed:@"user_select.png"]];
+    controller2.tabBarItem = item2;
+    
+
+    
+    self.tabbarController.viewControllers = [NSArray arrayWithObjects:hvc, controller1, controller2, nil];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.tabbarController];
+    self.window.rootViewController = self.navigationController;
+
+}
+
+#pragma mark - Private Methods
+- (void)logout {
+    LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];
+    loginVC.delegate = self;
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    self.window.rootViewController = self.navigationController;
 }
 
 @end
