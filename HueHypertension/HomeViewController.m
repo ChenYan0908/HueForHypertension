@@ -11,12 +11,15 @@
 #import "CDMNetworkManager.h"
 #import "knowledgeModel.h"
 #import "DetailKnowledgeViewController.h"
+#import "UserManager.h"
+#import <AVOSCloud/AVOSCloud.h>
+
 
 static NSString * const LogoutNotification = @"LogoutNotification";
 
 @interface HomeViewController () <UITableViewDelegate, UITableViewDataSource, SDCycleScrollViewDelegate>
 
-@property (weak, nonatomic) IBOutlet SDCycleScrollView *cycleView;
+@property (weak, nonatomic) SDCycleScrollView *cycleView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *knowledgeArray;
 
@@ -38,30 +41,28 @@ typedef enum : NSInteger {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.cycleView.delegate = self;
-    self.cycleView.autoScrollTimeInterval = 5;
-    self.cycleView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
-
     self.automaticallyAdjustsScrollViewInsets = NO;
 
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 60, 0);
-
+    [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
+    self.tableView.contentInset = UIEdgeInsetsZero;
+    
     [self fetchTopKnowledge];
+    
+//    [self testLeanCloud];
 
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES];
-
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];  // clear extra table view cell
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    if (!self.cycleView) {
+        self.cycleView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 240) delegate:self placeholderImage:nil];
+        self.cycleView.delegate = self;
+        self.cycleView.autoScrollTimeInterval = 5;
+        self.cycleView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
+        [self.view addSubview:self.cycleView];
+    }
 }
-
-- (void)viewDidAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:YES];
-    [super viewDidAppear:animated];
-}
-
 
 - (void)fetchTopKnowledge{
     [[CDMNetworkManager sharedManager] getURLString:@"health-knowledge/NewestKnoService.jsp" parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
@@ -206,6 +207,23 @@ typedef enum : NSInteger {
     dispatch_async(dispatch_get_main_queue(), ^{
         [nav pushViewController:dVC animated:YES];
     });
+}
+
+#pragma mark - Test
+- (void)testLeanCloud {
+    NSString *leanCloudId = [UserManager manager].user.leanCloudId;
+    AVUser *user = [AVUser objectWithObjectId:leanCloudId];
+    AVObject *bp = [AVObject objectWithClassName:@"BloodPressure"];
+    [bp setObject:@120 forKey:@"sys"];
+    [bp setObject:@80 forKey:@"dia"];
+    [bp setObject:@70 forKey:@"heartRate"];
+    [bp setObject:user forKey:@"patient"];
+    [bp setObject:@"some note" forKey:@"note"];
+    [bp saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        if (succeeded) {
+            NSLog(@"save succeeded");
+        }
+    }];
 }
 
 

@@ -11,7 +11,6 @@
 #import "NSObject+Tips.h"
 #import "AlertManager.h"
 #import "HomeViewController.h"
-#import "TabBarController.h"
 
 static NSString * const LogoutNotification = @"LogoutNotification";
 

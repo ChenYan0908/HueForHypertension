@@ -10,6 +10,7 @@
 #import "LoginViewController.h"
 #import <AVOSCloud/AVOSCloud.h>
 #import "NSObject+Tips.h"
+#import "UserManager.h"
 
 @interface LoginViewController ()
 
@@ -17,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *registButton;
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIButton *switchButton;
 
 @end
 
@@ -27,19 +29,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    if (true) {
-//        self
-//    }
     [self.loginButton.layer setCornerRadius:10.0f];
     [self.loginButton.layer setBorderWidth:1.0f];
     [self.loginButton.layer setBorderColor:[UIColor whiteColor].CGColor];
     [self.registButton.layer setCornerRadius:10.0f];
     [self.registButton.layer setBorderWidth:1.0f];
     [self.registButton.layer setBorderColor:[UIColor whiteColor].CGColor];
+    self.usernameTextField.delegate = self;
+    self.passwordTextField.delegate = self;
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"rememberPassword"]) {
+        self.switchButton.selected = YES;
+        self.usernameTextField.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"username"];
+        self.passwordTextField.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"password"];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController.navigationBar setHidden:YES];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (IBAction)touchLoginButton:(UIButton *)sender {
@@ -53,6 +64,11 @@
                 NSLog(@"登录失败 %@", error);
                 [self showFailureTips:@"用户名密码错误"];
             } else {
+                User *currentUser = [[User alloc] initWithId:user.objectId];
+                [UserManager manager].user = currentUser;
+                [[UserManager manager] saveAuthorizeData];
+                [[NSUserDefaults standardUserDefaults] setObject:username forKey:@"username"];
+                [[NSUserDefaults standardUserDefaults] setObject:password forKey:@"password"];
                 [self.delegate loginDidSuccess];
             }
         }];
@@ -76,6 +92,11 @@
             }
         }];
     }
+}
+
+- (IBAction)touchSwitchButton:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    [[NSUserDefaults standardUserDefaults] setBool:sender.selected forKey:@"rememberPassword"];
 }
 
 @end

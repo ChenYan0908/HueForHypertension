@@ -13,8 +13,9 @@
 @end
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : BaseViewController <UITextFieldDelegate>
 
 @property (nonatomic, weak) id<LoginDelegate> delegate;
 

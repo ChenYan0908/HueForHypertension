@@ -10,8 +10,6 @@
 		46472C9B667EBA57AD194D15 /* Pods_HueHypertension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C043E0920653887C70424ACD /* Pods_HueHypertension.framework */; };
 		FF0F7B8F1E7FC57000755D66 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7B8D1E7FC57000755D66 /* HomeViewController.m */; };
 		FF0F7B901E7FC57000755D66 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7B8E1E7FC57000755D66 /* HomeViewController.xib */; };
-		FF0F7B941E7FCB7700755D66 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7B921E7FCB7700755D66 /* TabBarController.m */; };
-		FF0F7B951E7FCB7700755D66 /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7B931E7FCB7700755D66 /* TabBarController.xib */; };
 		FF0F7B9D1E81133D00755D66 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7B9C1E81133D00755D66 /* HomeTableViewCell.xib */; };
 		FF0F7BBC1E84ED1400755D66 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7B9E1E84ED1400755D66 /* logo.png */; };
 		FF0F7BBD1E84ED1400755D66 /* paper_571px.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7B9F1E84ED1400755D66 /* paper_571px.png */; };
@@ -22,8 +20,8 @@
 		FF0F7BC21E84ED1400755D66 /* right_arrow_green.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7BA41E84ED1400755D66 /* right_arrow_green.png */; };
 		FF0F7BC31E84ED1400755D66 /* right_arrow_red.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7BA51E84ED1400755D66 /* right_arrow_red.png */; };
 		FF0F7BC41E84ED1400755D66 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7BA61E84ED1400755D66 /* right_arrow.png */; };
-		FF0F7BC51E84ED1400755D66 /* switch_off_579px_.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7BA71E84ED1400755D66 /* switch_off_579px_.png */; };
-		FF0F7BC61E84ED1400755D66 /* switch_on_579px.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7BA81E84ED1400755D66 /* switch_on_579px.png */; };
+		FF0F7BC51E84ED1400755D66 /* switch_off.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7BA71E84ED1400755D66 /* switch_off.png */; };
+		FF0F7BC61E84ED1400755D66 /* switch_on.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7BA81E84ED1400755D66 /* switch_on.png */; };
 		FF0F7BC71E84ED1400755D66 /* user_529px.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7BA91E84ED1400755D66 /* user_529px.png */; };
 		FF0F7BC81E84ED1400755D66 /* user_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7BAA1E84ED1400755D66 /* user_select@2x.png */; };
 		FF0F7BC91E84ED1400755D66 /* user_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0F7BAB1E84ED1400755D66 /* user_select@3x.png */; };
@@ -50,6 +48,10 @@
 		FF1941251E850CF8006AA583 /* NSObject+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1941241E850CF8006AA583 /* NSObject+Null.m */; };
 		FF1941271E8510E6006AA583 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1941261E8510E6006AA583 /* delete.png */; };
 		FF1941291E85110B006AA583 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1941281E85110B006AA583 /* save.png */; };
+		FF1941301E88EA9A006AA583 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF19412F1E88EA9A006AA583 /* UserManager.m */; };
+		FF1941331E88EEA2006AA583 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1941321E88EEA2006AA583 /* User.m */; };
+		FF1941361E88F1A0006AA583 /* DataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1941351E88F1A0006AA583 /* DataCache.m */; };
+		FF1941391E893AE2006AA583 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1941381E893AE2006AA583 /* BaseViewController.m */; };
 		FFBABFC71E67F2B200E68260 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBABFC61E67F2B200E68260 /* main.m */; };
 		FFBABFCA1E67F2B200E68260 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBABFC91E67F2B200E68260 /* AppDelegate.m */; };
 		FFBABFD21E67F2B200E68260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBABFD11E67F2B200E68260 /* Assets.xcassets */; };
@@ -104,9 +106,6 @@
 		FF0F7B8C1E7FC57000755D66 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FF0F7B8D1E7FC57000755D66 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		FF0F7B8E1E7FC57000755D66 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		FF0F7B911E7FCB7700755D66 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
-		FF0F7B921E7FCB7700755D66 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
-		FF0F7B931E7FCB7700755D66 /* TabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
 		FF0F7B9C1E81133D00755D66 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		FF0F7B9E1E84ED1400755D66 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		FF0F7B9F1E84ED1400755D66 /* paper_571px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper_571px.png; sourceTree = "<group>"; };
@@ -117,8 +116,8 @@
 		FF0F7BA41E84ED1400755D66 /* right_arrow_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow_green.png; sourceTree = "<group>"; };
 		FF0F7BA51E84ED1400755D66 /* right_arrow_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow_red.png; sourceTree = "<group>"; };
 		FF0F7BA61E84ED1400755D66 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
-		FF0F7BA71E84ED1400755D66 /* switch_off_579px_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_off_579px_.png; sourceTree = "<group>"; };
-		FF0F7BA81E84ED1400755D66 /* switch_on_579px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_on_579px.png; sourceTree = "<group>"; };
+		FF0F7BA71E84ED1400755D66 /* switch_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_off.png; sourceTree = "<group>"; };
+		FF0F7BA81E84ED1400755D66 /* switch_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_on.png; sourceTree = "<group>"; };
 		FF0F7BA91E84ED1400755D66 /* user_529px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_529px.png; sourceTree = "<group>"; };
 		FF0F7BAA1E84ED1400755D66 /* user_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_select@2x.png"; sourceTree = "<group>"; };
 		FF0F7BAB1E84ED1400755D66 /* user_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_select@3x.png"; sourceTree = "<group>"; };
@@ -149,6 +148,14 @@
 		FF1941241E850CF8006AA583 /* NSObject+Null.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Null.m"; sourceTree = "<group>"; };
 		FF1941261E8510E6006AA583 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		FF1941281E85110B006AA583 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		FF19412E1E88EA9A006AA583 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		FF19412F1E88EA9A006AA583 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		FF1941311E88EEA2006AA583 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FF1941321E88EEA2006AA583 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FF1941341E88F1A0006AA583 /* DataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCache.h; sourceTree = "<group>"; };
+		FF1941351E88F1A0006AA583 /* DataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCache.m; sourceTree = "<group>"; };
+		FF1941371E893AE2006AA583 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FF1941381E893AE2006AA583 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		FFBABFC21E67F2B200E68260 /* HueHypertension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueHypertension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBABFC61E67F2B200E68260 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFBABFC81E67F2B200E68260 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -277,8 +284,8 @@
 				FF0F7BA41E84ED1400755D66 /* right_arrow_green.png */,
 				FF0F7BA51E84ED1400755D66 /* right_arrow_red.png */,
 				FF0F7BA61E84ED1400755D66 /* right_arrow.png */,
-				FF0F7BA71E84ED1400755D66 /* switch_off_579px_.png */,
-				FF0F7BA81E84ED1400755D66 /* switch_on_579px.png */,
+				FF0F7BA71E84ED1400755D66 /* switch_off.png */,
+				FF0F7BA81E84ED1400755D66 /* switch_on.png */,
 				FF0F7BA91E84ED1400755D66 /* user_529px.png */,
 				FF0F7BAA1E84ED1400755D66 /* user_select@2x.png */,
 				FF0F7BAB1E84ED1400755D66 /* user_select@3x.png */,
@@ -314,6 +321,17 @@
 			name = Knowledge;
 			sourceTree = "<group>";
 		};
+		FF19412A1E88EA26006AA583 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				FF19412E1E88EA9A006AA583 /* UserManager.h */,
+				FF19412F1E88EA9A006AA583 /* UserManager.m */,
+				FF1941311E88EEA2006AA583 /* User.h */,
+				FF1941321E88EEA2006AA583 /* User.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		FFBABFB91E67F2B200E68260 = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +357,7 @@
 		FFBABFC41E67F2B200E68260 /* HueHypertension */ = {
 			isa = PBXGroup;
 			children = (
+				FF19412A1E88EA26006AA583 /* User */,
 				FF19411A1E84FCB9006AA583 /* Knowledge */,
 				FF0F7B9A1E8112EE00755D66 /* Resource */,
 				FFBAC04B1E6EA2AA00E68260 /* Utils */,
@@ -435,15 +454,14 @@
 		FFBAC01A1E6E8EC900E68260 /* Hypertension */ = {
 			isa = PBXGroup;
 			children = (
+				FF1941371E893AE2006AA583 /* BaseViewController.h */,
+				FF1941381E893AE2006AA583 /* BaseViewController.m */,
 				FFBAC01B1E6E8F5F00E68260 /* LoginViewController.h */,
 				FFBAC01C1E6E8F5F00E68260 /* LoginViewController.m */,
 				FFBAC01D1E6E8F5F00E68260 /* LoginViewController.xib */,
 				FF0F7B8C1E7FC57000755D66 /* HomeViewController.h */,
 				FF0F7B8D1E7FC57000755D66 /* HomeViewController.m */,
 				FF0F7B8E1E7FC57000755D66 /* HomeViewController.xib */,
-				FF0F7B911E7FCB7700755D66 /* TabBarController.h */,
-				FF0F7B921E7FCB7700755D66 /* TabBarController.m */,
-				FF0F7B931E7FCB7700755D66 /* TabBarController.xib */,
 			);
 			name = Hypertension;
 			sourceTree = "<group>";
@@ -481,6 +499,8 @@
 		FFBAC04B1E6EA2AA00E68260 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FF1941341E88F1A0006AA583 /* DataCache.h */,
+				FF1941351E88F1A0006AA583 /* DataCache.m */,
 				FFBAC0481E6EA2A600E68260 /* AlertManager.h */,
 				FFBAC0491E6EA2A600E68260 /* AlertManager.m */,
 				FF1941171E84FAB6006AA583 /* CDMNetworkManager.h */,
@@ -603,7 +623,7 @@
 			files = (
 				FF0F7BCB1E84ED1400755D66 /* user@3x.png in Resources */,
 				FF0F7BBF1E84ED1400755D66 /* pressure_512px.png in Resources */,
-				FF0F7BC51E84ED1400755D66 /* switch_off_579px_.png in Resources */,
+				FF0F7BC51E84ED1400755D66 /* switch_off.png in Resources */,
 				FF0F7BD91E84ED1400755D66 /* HUE UI.png in Resources */,
 				FF0F7B9D1E81133D00755D66 /* HomeTableViewCell.xib in Resources */,
 				FF0F7BBE1E84ED1400755D66 /* pencil_196px.png in Resources */,
@@ -613,7 +633,6 @@
 				FF0F7BBD1E84ED1400755D66 /* paper_571px.png in Resources */,
 				FFBABFD51E67F2B200E68260 /* LaunchScreen.storyboard in Resources */,
 				FFBAC00F1E6E76BA00E68260 /* PHBridgePushLinkViewController.xib in Resources */,
-				FF0F7B951E7FCB7700755D66 /* TabBarController.xib in Resources */,
 				FF0F7BD41E84ED1400755D66 /* eye_914px.png in Resources */,
 				FF0F7BCD1E84ED1400755D66 /* alarm_clock_1304px.png in Resources */,
 				FF0F7B901E7FC57000755D66 /* HomeViewController.xib in Resources */,
@@ -633,7 +652,7 @@
 				FF0F7BD51E84ED1400755D66 /* home_select@2x.png in Resources */,
 				FF1941221E850B9A006AA583 /* DetailKnowledgeViewController.xib in Resources */,
 				FF0F7BD61E84ED1400755D66 /* home_select@3x.png in Resources */,
-				FF0F7BC61E84ED1400755D66 /* switch_on_579px.png in Resources */,
+				FF0F7BC61E84ED1400755D66 /* switch_on.png in Resources */,
 				FF0F7BCE1E84ED1400755D66 /* book_300px_.png in Resources */,
 				FF0F7BC11E84ED1400755D66 /* right_arrow_blue.png in Resources */,
 				FF0F7BCA1E84ED1400755D66 /* user@2x.png in Resources */,
@@ -716,13 +735,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFBAC0131E6E76D200E68260 /* PHBridgeSelectionViewController.m in Sources */,
+				FF1941391E893AE2006AA583 /* BaseViewController.m in Sources */,
+				FF1941301E88EA9A006AA583 /* UserManager.m in Sources */,
 				FFBAC0071E6E767600E68260 /* HueManager.m in Sources */,
 				FFBABFCA1E67F2B200E68260 /* AppDelegate.m in Sources */,
 				FFBAC0181E6E76E100E68260 /* PHLoadingViewController.m in Sources */,
 				FFBAC0401E6E9A5A00E68260 /* DDTTYLogger.m in Sources */,
+				FF1941331E88EEA2006AA583 /* User.m in Sources */,
 				FFBAC03E1E6E9A5A00E68260 /* DDFileLogger.m in Sources */,
 				FFBAC01E1E6E8F5F00E68260 /* LoginViewController.m in Sources */,
 				FF0F7B8F1E7FC57000755D66 /* HomeViewController.m in Sources */,
+				FF1941361E88F1A0006AA583 /* DataCache.m in Sources */,
 				FF19411D1E84FCC6006AA583 /* knowledgeModel.m in Sources */,
 				FFBAC00E1E6E76BA00E68260 /* PHBridgePushLinkViewController.m in Sources */,
 				FFBAC03C1E6E9A5A00E68260 /* DDAbstractDatabaseLogger.m in Sources */,
@@ -730,7 +753,6 @@
 				FFBAC0471E6EA22B00E68260 /* UIResponder+FirstResponder.m in Sources */,
 				FFBABFC71E67F2B200E68260 /* main.m in Sources */,
 				FFBAC04A1E6EA2A600E68260 /* AlertManager.m in Sources */,
-				FF0F7B941E7FCB7700755D66 /* TabBarController.m in Sources */,
 				FF1941211E850B9A006AA583 /* DetailKnowledgeViewController.m in Sources */,
 				FFBAC0441E6EA13400E68260 /* NSObject+Tips.m in Sources */,
 				FFBAC03D1E6E9A5A00E68260 /* DDASLLogger.m in Sources */,

@@ -14,6 +14,7 @@
                 <outlet property="loginButton" destination="5C7-MJ-WeC" id="5mj-WE-A5j"/>
                 <outlet property="passwordTextField" destination="Q1b-kD-jjX" id="5PZ-lx-muJ"/>
                 <outlet property="registButton" destination="qv3-qs-FkB" id="ymG-zN-f1P"/>
+                <outlet property="switchButton" destination="CVi-2U-FLh" id="Evh-dN-drZ"/>
                 <outlet property="usernameTextField" destination="JTi-3c-5Xo" id="1CB-3q-GYr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -36,19 +37,19 @@
                     <rect key="frame" x="89" y="272" width="199" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q1b-kD-jjX">
                     <rect key="frame" x="89" y="318" width="199" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="记住密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTE-YK-aWQ">
-                    <rect key="frame" x="233" y="363" width="55" height="21"/>
+                    <rect key="frame" x="173" y="364" width="55" height="21"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="55" id="NFc-7y-bRg"/>
-                        <constraint firstAttribute="height" constant="21" id="lOM-jH-7A3"/>
+                        <constraint firstAttribute="height" constant="21" id="1an-E6-S7g"/>
+                        <constraint firstAttribute="width" constant="55" id="A2X-9D-PWr"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -85,32 +86,46 @@
                         <constraint firstAttribute="width" constant="80" id="BSE-hf-3yy"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVi-2U-FLh">
+                    <rect key="frame" x="246" y="364" width="42" height="21"/>
+                    <state key="normal" image="switch_off.png"/>
+                    <state key="selected" image="switch_on.png"/>
+                    <connections>
+                        <action selector="touchSwitchButton:" destination="-1" eventType="touchUpInside" id="cd2-GB-CqB"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.078431372549019607" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="CVi-2U-FLh" firstAttribute="leading" secondItem="YTE-YK-aWQ" secondAttribute="trailing" constant="18" id="6Ag-XW-lYw"/>
                 <constraint firstItem="5C7-MJ-WeC" firstAttribute="trailing" secondItem="qv3-qs-FkB" secondAttribute="trailing" id="718-Zo-97o"/>
                 <constraint firstItem="5C7-MJ-WeC" firstAttribute="leading" secondItem="qv3-qs-FkB" secondAttribute="leading" id="LB0-A1-dNI"/>
                 <constraint firstItem="JTi-3c-5Xo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="89" id="NE4-Wk-avU"/>
-                <constraint firstItem="Q1b-kD-jjX" firstAttribute="trailing" secondItem="YTE-YK-aWQ" secondAttribute="trailing" id="O43-d6-QnR"/>
                 <constraint firstItem="l6B-Qf-3Ck" firstAttribute="centerX" secondItem="5C7-MJ-WeC" secondAttribute="centerX" id="T8y-xR-IUo"/>
                 <constraint firstItem="Q1b-kD-jjX" firstAttribute="centerX" secondItem="5C7-MJ-WeC" secondAttribute="centerX" id="TzA-nA-tit"/>
+                <constraint firstItem="YTE-YK-aWQ" firstAttribute="bottom" secondItem="CVi-2U-FLh" secondAttribute="bottom" id="ZEQ-mr-cCa"/>
                 <constraint firstItem="l6B-Qf-3Ck" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bH2-jZ-xFv"/>
                 <constraint firstItem="JTi-3c-5Xo" firstAttribute="top" secondItem="Ugp-UP-TUn" secondAttribute="bottom" constant="50" id="baj-Bb-1uE"/>
                 <constraint firstItem="Ugp-UP-TUn" firstAttribute="centerX" secondItem="l6B-Qf-3Ck" secondAttribute="centerX" id="cdI-8b-6MZ"/>
                 <constraint firstItem="Q1b-kD-jjX" firstAttribute="top" secondItem="JTi-3c-5Xo" secondAttribute="bottom" constant="16" id="cxH-7Z-XVN"/>
-                <constraint firstItem="YTE-YK-aWQ" firstAttribute="top" secondItem="Q1b-kD-jjX" secondAttribute="bottom" constant="15" id="g47-os-oAp"/>
+                <constraint firstItem="YTE-YK-aWQ" firstAttribute="trailing" secondItem="Ugp-UP-TUn" secondAttribute="trailing" id="fym-rb-0am"/>
+                <constraint firstItem="YTE-YK-aWQ" firstAttribute="top" secondItem="Q1b-kD-jjX" secondAttribute="bottom" constant="16" id="g2e-TU-baO"/>
                 <constraint firstItem="JTi-3c-5Xo" firstAttribute="leading" secondItem="Q1b-kD-jjX" secondAttribute="leading" id="jHO-23-FVB"/>
                 <constraint firstAttribute="bottom" secondItem="qv3-qs-FkB" secondAttribute="bottom" constant="83" id="lC0-HE-OK8"/>
                 <constraint firstItem="Q1b-kD-jjX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lD1-o9-Bnk"/>
+                <constraint firstItem="CVi-2U-FLh" firstAttribute="trailing" secondItem="Q1b-kD-jjX" secondAttribute="trailing" id="mJv-kb-r0z"/>
                 <constraint firstItem="5C7-MJ-WeC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="mah-mA-abs"/>
                 <constraint firstItem="l6B-Qf-3Ck" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="pK1-Mx-SYn"/>
                 <constraint firstItem="JTi-3c-5Xo" firstAttribute="trailing" secondItem="Q1b-kD-jjX" secondAttribute="trailing" id="qaV-Pc-mhX"/>
                 <constraint firstItem="qv3-qs-FkB" firstAttribute="top" secondItem="5C7-MJ-WeC" secondAttribute="bottom" constant="13" id="tJ6-eG-BFE"/>
+                <constraint firstItem="YTE-YK-aWQ" firstAttribute="top" secondItem="CVi-2U-FLh" secondAttribute="top" id="yFn-nf-PrX"/>
             </constraints>
             <point key="canvasLocation" x="26.5" y="69.5"/>
         </view>
     </objects>
     <resources>
+        <image name="switch_off.png" width="483" height="218"/>
+        <image name="switch_on.png" width="483" height="218"/>
         <image name="user_529px.png" width="441" height="441"/>
     </resources>
 </document>
